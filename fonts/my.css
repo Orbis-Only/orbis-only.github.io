@@ -14,7 +14,7 @@ src: url('/fonts/Comfortaa-Regular.ttf') format('truetype');
     position:fixed;
     top:0px;
 }
-#b-popup @b-popup-content{
+#b-popup, @b-popup-content{
     margin:40px auto 0px auto;
     width:100px;
     height: 40px;
