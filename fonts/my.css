@@ -7,7 +7,6 @@ src: url('/fonts/Comfortaa-Regular.ttf') format('truetype');
 
 #b-popup-content{
     width:100px;
-    height: 40px;
     padding:10px;
     background-color: #c5c5c5;
     border-radius:5px;
