@@ -13,6 +13,7 @@ src: url('/fonts/Comfortaa-Regular.ttf') format('truetype');
     overflow:hidden;
     position:absolute;
     top:0px;
+    align="center"
 }
 #b-popup, #b-popup-content{
     width:100px;
