@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title>Orbis Only</title>
+    <link rel="stylesheet" type="text/css" href="fonts/my.css">
+</head>
+<body>
+
+ 	<p id="top" style="font-family: 'MyWebFont';"> Мы делаем сайты. <wbr>Не для себя.. для Вас.</p>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <div id="ConfirmationDialog" class="ModalBackground" style="display: none;"></div>
+    <span id="contacts" onclick="javascript:alertMsg();">Узнай наши контакты</span>
+    <script type="text/javascript">
+        function alertMsg() {
+            var modalHTML = '';
+            modalHTML += '<div id="ConfirmationMessage" class="rt">'+ 
+                          'всплывающее</div>'
+ 
+            $('#ConfirmationDialog').html(modalHTML);
+ 
+            $("#ConfirmationDialog").dialog({
+                modal: true,
+                title: 'Свяжитесь с нами',
+                width: 500,
+                resizable: false,
+                buttons: {
+                    
+                    Cancel: function () {
+                        $('#ConfirmationDialog').dialog("close");
+                    }
+                }
+            });
+        }
+    </script>
+    
+</body>
+</html>
